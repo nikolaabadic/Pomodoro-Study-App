@@ -1,0 +1,77 @@
+body{
+    background-color: #e84c3d;
+}
+p {
+    font-family: 'Recursive', sans-serif;
+}
+#wrapper{
+    background-image: url("../img/tomato.png");
+    background-repeat: no-repeat;
+    background-position: center 15%;
+    padding-top: 100px;
+    text-align: center;
+}
+    #title{
+        font-family: 'Bungee Shade', cursive;
+        font-size: 50px;
+    }
+    #fields{
+        margin-top: 50px;
+        display: flex;        
+        justify-content: center;
+    }
+        
+        #time-field,#break-field{
+            background-color: transparent;
+            height: 40px;
+            width: 80px;
+            border: none;
+            color: black;
+            font-family: 'Bungee Shade', cursive;
+            font-size: 50px;
+            text-align: center;
+        }
+        #time-field::placeholder, #break-field::placeholder{
+            color:black;
+        }
+        #time-field:focus, #break-field:focus{
+            outline:none;
+        }
+    #begin{
+        background-color:transparent;
+        border: none;
+        font-family: 'Bungee Shade', cursive;
+        font-size: 40px;
+        padding-right: 15px;
+    }
+        #begin:hover,#pause:hover,#quit:hover{
+            transform: scale(1.2,1.2);
+            transition-duration: 0.2s;
+        }
+        #begin:focus,#pause:focus,#quit:focus{
+            outline:none;
+        }
+
+#main-wrapper{
+    text-align: center;
+    padding-right: 15px;
+}
+    #times{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+        #minuts,#seconds{
+            font-family: 'Bungee Shade', cursive;
+            font-size: 100px;
+            margin: 0px;
+            padding: 0px;
+        }
+    #pause,#quit{
+        background-color:transparent;
+        border: none;
+        font-family: 'Bungee Shade', cursive;
+        font-size: 40px;
+        padding-right: 15px;
+    }
